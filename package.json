@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "next build"
   },
   "dependencies": {
     "@next/swc-win32-x64-msvc": "^15.1.7",
