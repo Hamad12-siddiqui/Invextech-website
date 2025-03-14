@@ -18,7 +18,7 @@ const Footer = ({ services, quickLinks, contactDetails }) => {
     <div className="w-full bg-[#0D2B43] border-t border-b border-gray-500 p-8">
       <div className="w-[95%] mx-auto flex flex-col lg:flex-row justify-between  py-12 space-y-8 lg:space-y-0">
 
-        <div className="w-full lg:w-[40%] lg:pr-10 lg:pl-10 p-0">
+        <div className="w-full lg:w-[40%]  lg:pr-10 lg:pl-10 p-0">
           <Image
             src="/images/invex-logo.png"
             alt="Invex Logo"
