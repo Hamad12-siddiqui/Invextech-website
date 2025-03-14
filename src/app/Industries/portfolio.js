@@ -12,8 +12,7 @@ const Portfolio = () => {
               <p className="text-sky-400 font-bold">Collaborate With Us</p>
               <h1 className="text-2xl font-bold">Discover Our Portfolio</h1>
               <div className="md:w-full w-[80%] h-auto relative">
-                {/* Overlay div */}
-                {/* <div className="absolute inset-0 bg-sky-300 bg-opacity-50 z-10"></div> */}
+                
                 <Image
                   src="/images/team.png"
                   alt="Team"

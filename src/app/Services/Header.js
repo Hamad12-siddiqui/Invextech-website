@@ -4,7 +4,7 @@ import CaseStudy from '../Services/CaseStudy'
 const Header = () => {
   return (
     <>
-    <div className='relative'>
+    <div className='relative '>
       <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
         <div className="inset-0 w-full h-full">
           <Image
@@ -16,7 +16,7 @@ const Header = () => {
           />
         </div>
         {/* Text Overlay */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center w-[90%] mx-auto px-4">
+        <div className="absolute max-w-[93%] inset-0 flex flex-col justify-center items-center text-white text-center w-[90%] mx-auto px-4">
           <p>DISCOVER-DESIGN-DEVELOP-LAUNCH</p>
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mt-2">
             Unleash business growth with our Software Development Services

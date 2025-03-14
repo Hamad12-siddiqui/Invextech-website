@@ -5,16 +5,17 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdArrowDropdown } from "react-icons/io";
 import DropServices from "../DropServices/DropServices";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
   const router = useRouter();
-  const handleInput = () => {
- router.push("/")
-  }
+  const pathname = usePathname();
 
+  const handleInput = () => {
+    router.push("/");
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -31,12 +32,10 @@ const Navbar = () => {
                 alt="Logo"
                 width={140}
                 height={60}
-            
               />
             </div>
           </Link>
 
-          {/* Hamburger Menu Icon */}
           <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
             <GiHamburgerMenu
               className="text-3xl text-sky-400"
@@ -44,7 +43,6 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Navigation Links */}
           <ul
             className={`${
               isMenuOpen ? "block" : "hidden"
@@ -58,7 +56,9 @@ const Navbar = () => {
             >
               <Link
                 href="./Services"
-                className="text-gray-700 hover:text-sky-500 transition duration-300 flex py-2 justify-center"
+                className={`${
+                  pathname === "/Services" ? "text-sky-400" : "text-gray-700"
+                } hover:text-sky-500 transition duration-300 flex py-2 justify-center`}
               >
                 Services
                 <IoMdArrowDropdown className="relative mt-1" />
@@ -77,7 +77,9 @@ const Navbar = () => {
             <li key="Industries">
               <Link
                 href="./Industries"
-                className="text-gray-700 hover:text-sky-500 transition duration-300 block py-2"
+                className={`${
+                  pathname === "/Industries" ? "text-sky-400" : "text-gray-700"
+                } hover:text-sky-500 transition duration-300 block py-2`}
               >
                 Industries
               </Link>
@@ -85,7 +87,9 @@ const Navbar = () => {
             <li key="work">
               <Link
                 href="./work"
-                className="text-gray-700 hover:text-sky-500 transition duration-300 block py-2"
+                className={`${
+                  pathname === "/work" ? "text-sky-400" : "text-gray-700"
+                } hover:text-sky-500 transition duration-300 block py-2`}
               >
                 Work
               </Link>
@@ -93,7 +97,9 @@ const Navbar = () => {
             <li key="About">
               <Link
                 href="./About"
-                className="text-gray-700 hover:text-sky-500 transition duration-300 block py-2"
+                className={`${
+                  pathname === "/About" ? "text-sky-400" : "text-gray-700"
+                } hover:text-sky-500 transition duration-300 block py-2`}
               >
                 About Us
               </Link>
@@ -101,7 +107,9 @@ const Navbar = () => {
             <li key="ContactUs">
               <Link
                 href="./ContactUs"
-                className="text-gray-700 hover:text-sky-500 transition duration-300 block py-2"
+                className={`${
+                  pathname === "/ContactUs" ? "text-sky-400" : "text-gray-700"
+                } hover:text-sky-500 transition duration-300 block py-2`}
               >
                 Contact Us
               </Link>
@@ -118,14 +126,13 @@ const Navbar = () => {
                 height={20}
                 aria-label="Email Icon"
               />
-                 <p className="text-gray-700 hover:text-sky-400 "> invextech@gmail.com</p>
+              <p className="text-gray-700 hover:text-sky-400 "> invextech@gmail.com</p>
             </Link>
-         
           </div>
         </div>
         <div className="hidden md:flex flex-col items-center justify-center border border-blue-500 bg-sky-500 text-white cursor-pointer hover:bg-sky-600 transition duration-300 px-6 py-2 ml-auto">
           <p className="font-semibold">GET Estimates</p>
-          <p className="text-sm">Response in 24 hours</p>
+          <p className="text-sm whitespace-nowrap">Response in 24 hours</p>
         </div>
       </nav>
     </>

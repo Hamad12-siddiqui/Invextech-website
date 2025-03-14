@@ -6,7 +6,7 @@ const Goal = () => {
   return (
     <>
       <div className='w-full pt-10 pb-28'>
-        <div className='w-[85%] lg:w-[80%] xl:w-[90%] m-auto'>
+        <div className='max-w-[88%]   mx-auto'>
           <p className='text-sky-400 font-semibold text-center'>
             Our Clients
           </p>

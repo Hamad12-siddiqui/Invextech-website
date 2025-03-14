@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <div className="w-full">
-      <div className="w-[93%] p-10 mx-auto">
+      <div className="max-w-[90%] p-10 mx-auto">
         <div className="w-full mx-auto text-center">
           <h1 className="text-xl font-bold">Contact Us</h1>
           <p className="text-gray-500 mt-3">Any question or remarks? Just write us a message!</p>
@@ -121,9 +121,9 @@ const Contact = () => {
               <div className="flex justify-end mt-14">
                 <button
                   type="submit"
-                  className="bg-white border text-black p-2 rounded-full flex items-center justify-center space-x-2 hover:bg-gray-100 transition duration-300"
+                  className="bg-white border text-black p-2 rounded-full flex items-center justify-center space-x-2 hover:bg-sky-400 transition duration-300"
                 >
-                  <span>Send Message</span>
+                  <span className='text-black hover:text-white'>Send Message</span>
                   <span className="p-2 rounded-full bg-sky-400">
                     <FaLongArrowAltRight className="text-white" />
                   </span>

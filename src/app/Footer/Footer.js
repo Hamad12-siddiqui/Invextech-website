@@ -2,22 +2,22 @@ import React from "react";
 import Image from "next/image";
 import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
-import { AiOutlineMail } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 import  Last from './Last';
 
 
 const iconComponents = {
-  FaHouse: <FaHouse size={36} className="text-white mr-2  border-2 border-dashed p-1 rounded-full" />,
-  AiOutlineMail: <AiOutlineMail size={36} className="text-white mr-2  border-2 border-dashed p-1 rounded-full" />,
-  FaPhoneAlt: <FaPhoneAlt size={36} className="text-white mr-2  border-2 border-dashed p-1 rounded-full" />,
+  FaHouse: <FaHouse size={36} className="text-white mr-2 mb-10  border-2 border-dashed p-1 rounded-full" />,
+  AiOutlineMail: <MdEmail size={36} className="text-white mr-2  mb-4  border-2 border-dashed p-1 rounded-full" />,
+  FaPhoneAlt: <FaPhoneAlt size={36} className="text-white mr-2  border-2 mb-5 border-dashed p-1 rounded-full" />,
 };
 
 const Footer = ({ services, quickLinks, contactDetails }) => {
   return (
     <>
     <div className="w-full bg-[#0D2B43] border-t border-b border-gray-500 p-8">
-      <div className="w-[93%] mx-auto flex flex-col lg:flex-row justify-between  py-12 space-y-8 lg:space-y-0">
-        {/* Logo and Description */}
+      <div className="w-[95%] mx-auto flex flex-col lg:flex-row justify-between  py-12 space-y-8 lg:space-y-0">
+
         <div className="w-full lg:w-[40%] lg:pr-10 lg:pl-10 p-0">
           <Image
             src="/images/invex-logo.png"
@@ -41,9 +41,8 @@ const Footer = ({ services, quickLinks, contactDetails }) => {
           </div>
         </div>
 
-        {/* Services and Quick Links */}
+    
         <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Services */}
           <div>
             <h1 className="text-white text-lg font-semibold mb-4">Services</h1>
             {services.map((service, index) => (
@@ -53,7 +52,7 @@ const Footer = ({ services, quickLinks, contactDetails }) => {
             ))}
           </div>
 
-          {/* Quick Links */}
+
           <div>
             <h1 className="text-white text-lg font-semibold mb-4">Quick Links</h1>
             {quickLinks.map((link, index) => (
@@ -62,8 +61,6 @@ const Footer = ({ services, quickLinks, contactDetails }) => {
               </p>
             ))}
           </div>
-
-          {/* Contact Us */}
           <div>
             <h1 className="text-white text-lg font-semibold mb-4">Contact Us</h1>
             {contactDetails.map((contact, index) => (

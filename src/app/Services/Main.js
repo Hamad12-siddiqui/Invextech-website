@@ -2,15 +2,17 @@ import React from 'react';
 
 const Main = ({ main }) => {
     return (
+     
         <div
-            className="bg-cover bg-center min-h-screen py-10"
+            className="bg-cover bg-center min-h-screen  py-10"
             style={{ backgroundImage: "url('/images/Vector 1.png')" }}
         >
+               <div className='max-w-[94%] mx-auto'>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-10 mt-10 ml-6">
                 {main.map((CurElem) => (
                     <section
                         key={CurElem.id}
-                        className="text-center py-5 border border-black w-full p-5 rounded-lg shadow-md bg-white bg-opacity-80 hover:scale-105 transition-transform duration-300"
+                        className="text-center py-5 w-full p-5 rounded-lg shadow-md bg-white bg-opacity-80 hover:scale-105 transition-transform duration-300 hover:border border-sky-500"
                         style={{ backgroundImage: "url('/images/bg.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
                         <div className="relative w-[120px] h-[120px] mx-auto mb-5">
@@ -35,12 +37,12 @@ const Main = ({ main }) => {
                             )}
                         </div>
 
-                        {/* Text Content */}
                         <h2 className="text-2xl font-bold mb-3">{CurElem.h2}</h2>
                         <p className="max-w-[300px] mx-auto leading-relaxed">{CurElem.p}</p>
                     </section>
                 ))}
             </div>
+        </div>
         </div>
     );
 };

@@ -8,7 +8,7 @@ const ServiceApi = [
     },
     {
         id: 2,
-        image1: "/images/mob.png",
+        image1: "/images/Mobile App Development.png",
         image2: "/images/vector.png",
         h2: "Mobile Development",
         p : "Whether build a native mobile app for iOS or Android, or a cross-platform solution using React Native, we have the skills and experience to bring your vision to life."

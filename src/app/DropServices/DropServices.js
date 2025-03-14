@@ -10,7 +10,7 @@
     {
       title: "Mobile App Development",
       description: "Transforming innovative ideas into user-friendly and high-performing mobile apps.",
-      image: "/images/mob.png",
+      image: "/images/Mobile App Development.png",
     },
     {
       title: "Ecommerce Development",
@@ -49,7 +49,7 @@
           <div className="w-full lg:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-6 lg:-mt-28 mt-10">
             {services.map((service, index) => (
               <div key={index} className="flex items-center space-x-6 p-3 ">
-                {/* Image Container */}
+         
                 <div className="relative ">
                   <Image
                     src="/images/Vector.png"
@@ -63,7 +63,7 @@
                     alt={service.title}
                     width={40}
                     height={40}
-                    className="absolute top-8 left-4 transform -translate-x-1/2 w-8 h-9"
+                    className="absolute top-6 left-4 transform -translate-x-1/2 w-12 h-12"
                   />
                 </div>
 

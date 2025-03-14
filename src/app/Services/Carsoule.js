@@ -33,7 +33,7 @@ const cards = [
     title: "Deployment",
     description:
       "Our development agency follows a rigorous deployment process to ensure that software and websites are deployed smoothly and efficiently. This process involves several key steps, including testing and validation, staging, and finally, deployment to the production environment.",
-    image: "/images/Mask group.png",
+    image: "/images/Group 1686554629.png",
   },
   {
     title: "Maintenance",
@@ -71,8 +71,8 @@ const Carousel = () => {
 
   return (
     <>
-    <div className="w-full bg-sky-100 p-8">
-      <section className="w-[90%] md:w-[80%] mx-auto text-center py-10">
+    <div className="  bg-sky-100 p-8">
+      <section className="max-w-[93%] mx-auto text-center py-10">
         <p className="text-lg font-medium text-sky-400">Our Process</p>
         <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mt-2">
         Gain a competitive edge with our customized approach to meeting your business objectives

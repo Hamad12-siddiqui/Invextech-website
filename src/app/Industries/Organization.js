@@ -39,7 +39,7 @@ const Organization = () => {
   return (
     <>
       <div className="w-full bg-sky-100 py-12">
-        <div className="w-[93%] mx-auto">
+        <div className="max-w-[85%] mx-auto">
           <div className="w-full md:w-[90%] mx-auto text-center mb-12">
             <p className="text-sky-500 font-bold">Our Clients</p>
             <h1 className="font-bold text-2xl md:text-3xl mt-2">

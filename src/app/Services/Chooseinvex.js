@@ -29,14 +29,14 @@ const ChooseInvex = () => {
   return (
     <>
     <div className="w-full bg-sky-100">
-      <div className="w-[93%] mx-auto py-6 text-center">
+      <div className="max-w-[85%] mx-auto py-6 text-center">
         <div className="w-full">
           <p className="text-lg text-sky-400">WHY CHOOSE INVEXTECH?</p>
           <h1 className="text-4xl font-semibold mt-1">
             Gain a competitive edge with our customized approach to meeting your business objectives
           </h1>
         </div>
-        <div className="flex flex-wrap justify-center gap-8 md:gap-14 items-center mt-10 md:mt-20 ">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-10 items-center mt-10 md:mt-20 ">
           {features.map((feature) => (
             <div
               key={feature.id}

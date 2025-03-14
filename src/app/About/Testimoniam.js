@@ -37,7 +37,7 @@ const Testimoniam = () => {
   return (
     <>
       <div className="w-full bg-sky-100 p-10">
-        <div className="w-[93%] mx-auto">
+        <div className="max-w-[90%] mx-auto">
           <div className="flex flex-col md:flex-row justify-between gap-6">
             {testimonials.map((testimonial) => (
               <div

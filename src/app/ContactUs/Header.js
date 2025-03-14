@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image */}
+  
       <Image
         src="/images/work.png"
         alt="Digital product development background"
@@ -19,10 +19,9 @@ const Header = () => {
         priority
       />
 
-      {/* Content Section */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white w-[90%] md:w-[80%] lg:w-[60%] mx-auto text-center">
+      <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-white text-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Contact Us</h1>
-        <p className="text-sm sm:text-base md:text-lg mb-8">
+        <p className="text-sm sm:text-base md:text-lg mb-8 max-w-[80%]">
           Want to consult with industry specialists? Take advantage of our call scheduling feature to easily book a time
           slot that accommodates your availability.
         </p>

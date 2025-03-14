@@ -14,7 +14,7 @@ const Hero = () => {
     <>
     
     <NavBar />
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/hero.jpg"
@@ -26,7 +26,7 @@ const Hero = () => {
       />
 
       {/* Content Overlay */}
-      <div className="relative z-10 flex h-full flex-col justify-center text-white max-w-[800px] mx-4 md:mx-20">
+      <div className="relative z-10 flex h-full flex-col justify-center text-white  max-w-[85%] mx-auto ">
         <p className="text-start text-lg mb-4">
           All-IN-ONE Digital Product Development
         </p>
@@ -53,7 +53,7 @@ const Hero = () => {
           width={1000} 
           height={300} 
           className="absolute bottom-0 right-64"
-        />
+        />  
       </div> */}
     </section>
     <Services />

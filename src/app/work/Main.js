@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import Contact from "../Industries/Contact";
 const projects = [
   {
@@ -62,8 +61,8 @@ const projects = [
 const Main = () => {
   return (
     <>
-      <div className="w-full mt-28 px-4 md:px-0">
-        <div className="w-full md:w-[82%] mx-auto">
+      <div className="max-w-[97%] mx-auto  px-4 md:px-0">
+        <div className="w-full md:max-w-[90%] mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.id}

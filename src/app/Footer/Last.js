@@ -5,7 +5,7 @@ const Last = () => {
   return (
     <>
     <div className='w-full bg-[#0D2B43] text-white py-6'>
-      <div className='w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center'>
+      <div className='max-w-[85%] mx-auto flex flex-col md:flex-row justify-between items-center'>
         {/* Footer Text */}
         <div className="text-center py-4 text-gray-400">
         &copy; 2025 All Rights Reserved By <span className="font-semibold text-white">InvexTech</span>

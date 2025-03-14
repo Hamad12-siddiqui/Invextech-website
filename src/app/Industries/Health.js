@@ -8,7 +8,7 @@ import ITSkill from "./ITSkill";
 const GradientBox = ({ imageSrc, altText, title, onClick }) => {
   return (
     <div
-      className="w-full md:w-[93%] flex items-center justify-between p-4 m-auto relative min-h-[100px] overflow-hidden bg-[rgb(8,27,45)] bg-gradient-to-br from-[rgba(8,27,45,1)] to-[rgba(66,169,196,1)] cursor-pointer"
+      className="w-full md:max-w-[90%] flex items-center justify-between p-4 m-auto relative min-h-[100px] overflow-hidden bg-[rgb(8,27,45)] bg-gradient-to-br from-[rgba(8,27,45,1)] to-[rgba(66,169,196,1)] cursor-pointer"
       onClick={onClick}
     >
       <div className="flex items-center w-full relative z-10">

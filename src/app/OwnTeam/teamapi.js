@@ -1,4 +1,3 @@
-// data.js
 import { FaCss3Alt, FaJs, FaHtml5, FaSass, FaVuejs, FaAngular, FaReact, FaPhp, FaLaravel } from "react-icons/fa";
 import { GrReactjs, GrMysql } from "react-icons/gr";
 import { SiMeteor, SiWebgl, SiPostgresql, SiExpress } from "react-icons/si";

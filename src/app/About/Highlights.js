@@ -29,12 +29,12 @@ const HighlightCard = ({ icon, count, label }) => (
 const Highlights = () => {
   return (
     <>
-      <div className='w-[85%] mx-auto'>
+      <div className='max-w-[93%] mx-auto'>
         <div className='text-center p-6 sm:p-8'>
           <p className='text-sky-400 text-sm font-semibold'>Our Work in Numbers</p>
           <h1 className='text-3xl sm:text-4xl font-bold mt-2'>Key Highlights</h1>
         </div>
-        <div className='grid grid-cols-1 sm:w-full w-[80%] mx-auto sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 p-6 sm:p-10'>
+        <div className='grid grid-cols-1 sm:w-full w-[80%] mx-auto sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6 sm:p-10'>
           {HIGHLIGHTS.map((item, index) => (
             <HighlightCard key={index} {...item} />
           ))}

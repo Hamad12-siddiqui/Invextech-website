@@ -16,7 +16,7 @@
       <>
         <div className="bg-gradient-to-r from-[#081B2D] to-[#42A9C4] relative w-full">
        
-            <div className="sm:w-[85%] w-full mx-auto md:py-36  py-20">
+            <div className="sm:max-w-[85%] w-full mx-auto md:py-36  py-20">
               <p className="text-center text-white font-sm">
                 DISCOVER-DESIGN-DEVELOP-LAUNCH
               </p>
