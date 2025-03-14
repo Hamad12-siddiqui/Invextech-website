@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-export default nextConfig;
+const nextConfig = {
+    swcMinify: false, // Disable SWC to avoid platform issues
+  };
+  
+  module.exports = nextConfig;
+  
