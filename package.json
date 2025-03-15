@@ -7,19 +7,21 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "next build"
+    "postinstall": "next build && node -e \"if (process.platform === 'linux') require('child_process').execSync('npm install @next/swc-linux-x64-gnu', {stdio: 'inherit'})\""
+
   },
   "dependencies": {
     "@next/swc-win32-x64-msvc": "^15.1.7",
     "embla-carousel-auto-scroll": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
-    "next": "15.1.7",
+    "next": "^15.1.7",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "swiper": "^11.2.4"
   },
+  
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "22.13.5",
