@@ -2,7 +2,7 @@ const ServiceApi = [
     {
         id: 1,
         image1: "/images/circle.png",
-        image2: "/images/vector.png",
+        image2: "/images/bgcircle.png",
         h2: "Web Development",
         p: "From custom websites to complex web apps, our team of experienced web developers delivers custom websites, using scalable, secure, and maintainable technology"
     },
