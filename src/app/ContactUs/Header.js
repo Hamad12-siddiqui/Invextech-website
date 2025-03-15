@@ -11,7 +11,7 @@ const Header = () => {
     <section className="relative h-screen w-full overflow-hidden">
   
       <Image
-        src="/images/work.png"
+        src="/images/service.png"
         alt="Digital product development background"
         fill
         quality={100}

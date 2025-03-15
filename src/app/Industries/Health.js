@@ -32,9 +32,9 @@ const GradientBox = ({ imageSrc, altText, title, onClick }) => {
 
 const ImageTextSection = ({ imageSrc, altText, title, description, listItems }) => {
   return (
-    <div className="w-full md:w-[93%] flex flex-col md:flex-row items-center justify-between gap-6 m-auto bg-[#0D2B43] p-6">
+    <div className="w-full md:max-w-[90%] flex flex-col md:flex-row items-center justify-between gap-6 mx-auto bg-[#0D2B43] p-6">
       <div className="w-[60%] md:w-[40%]   mt-6">
-        <Image src={imageSrc} alt={altText} width={250} height={250} className="w-full h-auto rounded-lg" />
+        <Image src={imageSrc} alt={altText} width={500} height={500} className="w-full h-auto rounded-lg" />
       </div>
 
       <div className="flex-1 w-full  md:w-[50%] text-white">
