@@ -8,7 +8,7 @@ const Header = () => {
       <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
         <div className="inset-0 w-full h-full">
           <Image
-            src="/images/work.png"
+            src="/images/service.png"
             alt="Hero Image"
             className="object-cover"
             fill
