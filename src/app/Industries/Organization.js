@@ -5,7 +5,6 @@ import Image from "next/image";
 import Contact from './Contact';
 
 const Organization = () => {
- 
   const testimonials = [
     {
       id: 1,
@@ -39,28 +38,29 @@ const Organization = () => {
   return (
     <>
       <div className="w-full bg-sky-100 py-12">
-        <div className="max-w-[85%] mx-auto">
+        <div className="max-w-[90%] xl:max-w-[85%] mx-auto">
           <div className="w-full md:w-[90%] mx-auto text-center mb-12">
-            <p className="text-sky-500 font-bold">Our Clients</p>
-            <h1 className="font-bold text-2xl md:text-3xl mt-2">
-            From Across The Globe, Organizations Entrust Our Exceptional Services To Achieve Their Goals.</h1>
+            <p className="text-sky-500 font-bold text-sm md:text-base">Our Clients</p>
+            <h1 className="font-bold text-xl md:text-2xl lg:text-3xl mt-2">
+              From Across The Globe, Organizations Entrust Our Exceptional Services To Achieve Their Goals.
+            </h1>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between gap-6">
+          <div className="flex flex-col md:flex-row md:justify-between gap-6">
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="border border-sky-400 p-6 rounded-xl bg-white flex-1 relative mb-6 md:mb-0 card-hover"
+                className="border border-sky-400 p-4 sm:p-6 rounded-xl bg-white flex-1 relative mb-6 md:mb-0 card-hover"
               >
-                <p className="text-gray-600 mb-4">{testimonial.text}</p>
+                <p className="text-gray-600 text-sm md:text-base mb-4">{testimonial.text}</p>
                 <div className="flex items-center mb-4">
                   <div className="flex">
                     {[...Array(4)].map((_, i) => (
-                      <FaStar key={i} className="text-yellow-400" />
+                      <FaStar key={i} className="text-yellow-400 text-sm md:text-base" />
                     ))}
-                    <FaStarHalfAlt className="text-yellow-400" />
+                    <FaStarHalfAlt className="text-yellow-400 text-sm md:text-base" />
                   </div>
-                  <p className="ml-2 text-gray-600">
+                  <p className="ml-2 text-gray-600 text-sm md:text-base">
                     {testimonial.rating} ({testimonial.reviews} Reviews)
                   </p>
                 </div>
@@ -73,13 +73,13 @@ const Organization = () => {
                     className="rounded-full"
                   />
                   <div className="ml-4">
-                    <h1 className="font-bold">{testimonial.name}</h1>
-                    <p className="text-gray-600">{testimonial.role}</p>
+                    <h1 className="font-bold text-sm md:text-base">{testimonial.name}</h1>
+                    <p className="text-gray-600 text-sm">{testimonial.role}</p>
                   </div>
                 </div>
                 {/* Arrow Icon */}
                 <div className="absolute bottom-4 right-4 bg-gray-200 p-2 rounded-full">
-                  <MdOutlineArrowOutward className="text-gray-600" />
+                  <MdOutlineArrowOutward className="text-gray-600 text-sm md:text-base" />
                 </div>
               </div>
             ))}

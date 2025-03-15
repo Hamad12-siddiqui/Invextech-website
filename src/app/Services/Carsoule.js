@@ -2,8 +2,9 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Team from '../OwnTeam/Team'
-import Portfolio from './Portfolio'
+import Team from '../OwnTeam/Team';
+import Portfolio from './Portfolio';
+
 const cards = [
   {
     title: "Requirement Gathering",
@@ -71,70 +72,70 @@ const Carousel = () => {
 
   return (
     <>
-    <div className="  bg-sky-100 p-8">
-      <section className="max-w-[93%] mx-auto text-center py-10">
-        <p className="text-lg font-medium text-sky-400">Our Process</p>
-        <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mt-2">
-        Gain a competitive edge with our customized approach to meeting your business objectives
-        </h1>
-        <p className="text-gray-700 mt-4 text-base md:text-lg leading-relaxed">
-        Taking a customized approach to every project we undertake, our rock-solid process is tailored to suit our clients’ needs. Our refined methodology delivers the best possible results, streamlining business operations and driving growth for startups and large enterprises. Trust us to help you achieve success with our tailor-made software development methodology.
-        </p>
-        <button className="text-white bg-[#42A9C4] p-4 rounded-md mt-8">
-          View Our Process
-        </button>
-      </section>
+      <div className="bg-sky-100 p-8">
+        <section className="max-w-[93%] mx-auto text-center py-10">
+          <p className="text-lg font-medium text-sky-400">Our Process</p>
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mt-2">
+            Gain a competitive edge with our customized approach to meeting your business objectives
+          </h1>
+          <p className="text-gray-700 mt-4 text-base md:text-lg leading-relaxed">
+            Taking a customized approach to every project we undertake, our rock-solid process is tailored to suit our clients’ needs. Our refined methodology delivers the best possible results, streamlining business operations and driving growth for startups and large enterprises. Trust us to help you achieve success with our tailor-made software development methodology.
+          </p>
+          <button className="text-white bg-[#42A9C4] p-4 rounded-md mt-8">
+            View Our Process
+          </button>
+        </section>
 
-      <div className="flex flex-row  items-center justify-center w-full mt-10">
-  {/* Previous Button */}
-  <button
-    className={`p-2 rounded-full md:block hidden mb-4 md:mb-0 md:mr-4 ${
-      activeButton === "prev"
-        ? "bg-white border border-sky-400"
-        : "bg-sky-300"
-    }`}
-    onClick={prevCard}
-  >
-    <IoIosArrowBack
-      className={`text-3xl ${
-        activeButton === "prev" ? "text-sky-300" : "text-white"
-      }`}
-    />
-  </button>
+        <div className="flex flex-col md:flex-row items-center justify-center w-full mt-10 gap-4">
+          {/* Previous Button */}
+          <button
+            className={`p-2 rounded-full mb-4 md:block hidden md:mb-0 md:mr-4 ${
+              activeButton === "prev"
+                ? "bg-white border border-sky-400"
+                : "bg-sky-300"
+            }`}
+            onClick={prevCard}
+          >
+            <IoIosArrowBack
+              className={`text-3xl ${
+                activeButton === "prev" ? "text-sky-300" : "text-white"
+              }`}
+            />
+          </button>
 
-  {/* Card Section */}
-  <section className="flex flex-col items-center w-[90%] lg:w-[36%] md:w-[45%]  lg:h-[370px] sm:h-[400px] h-[440px] border border-sky-400 rounded-2xl bg-white justify-center sm:p-6 p-2 text-center gap-y-2">
-    <div className="bg-sky-200 rounded-full p-3">
-      <Image
-        src={cards[currentIndex].image}
-        alt={cards[currentIndex].title}
-        width={100}
-        height={100}
-        className="h-16 w-16"
-      />
-    </div>
-    <h2 className="text-xl font-semibold">{cards[currentIndex].title}</h2>
-    <p className="text-gray-600 max-w-lg text-center">
-      {cards[currentIndex].description}
-    </p>
-  </section>
+          {/* Card Section */}
+          <section className="flex flex-col items-center w-[90%] lg:w-[36%] md:w-[45%] lg:h-[370px] sm:h-[400px] h-[440px] border border-sky-400 rounded-2xl bg-white justify-center sm:p-6 p-4 text-center gap-y-4">
+            <div className="bg-sky-200 rounded-full p-3">
+              <Image
+                src={cards[currentIndex].image}
+                alt={cards[currentIndex].title}
+                width={100}
+                height={100}
+                className="h-16 w-16"
+              />
+            </div>
+            <h2 className="text-xl md:text-2xl font-semibold">{cards[currentIndex].title}</h2>
+            <p className="text-gray-600 max-w-lg text-sm md:text-base">
+              {cards[currentIndex].description}
+            </p>
+          </section>
 
-  {/* Next Button */}
-  <button
-    className={`p-2 rounded-full mt-4 md:block hidden md:mt-0 md:ml-4 ${
-      activeButton === "next"
-        ? "bg-white border border-sky-400"
-        : "bg-sky-300"
-    }`}
-    onClick={nextCard}
-  >
-    <IoIosArrowForward
-      className={`text-3xl ${
-        activeButton === "next" ? "text-sky-300" : "text-white"
-      }`}
-    />
-  </button>
-</div>
+          {/* Next Button */}
+          <button
+            className={`p-2 rounded-full mt-4 md:mt-0 md:ml-4 ${
+              activeButton === "next"
+                ? "bg-white border border-sky-400"
+                : "bg-sky-300"
+            }`}
+            onClick={nextCard}
+          >
+            <IoIosArrowForward
+              className={`text-3xl ${
+                activeButton === "next" ? "text-sky-300" : "text-white"
+              }`}
+            />
+          </button>
+        </div>
       </div>
       <Team />
       <Portfolio />

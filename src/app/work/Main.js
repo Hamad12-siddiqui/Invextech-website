@@ -66,7 +66,7 @@ const Main = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`flex flex-col md:flex-row justify-between items-center gap-8 md:gap-28 mt-14 ${
+              className={`flex flex-col md:flex-row justify-between items-center gap-8 md:gap-28 sm:mt-14 mt-36 ${
                 index % 2 === 0 ? "md:flex-row-reverse" : ""
               }`}
             >
