@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image'; 
-// import Organization from '../Industries/Organization'
 
 const Goal = () => {
   return (
@@ -21,7 +20,6 @@ const Goal = () => {
           <Image src="/images/Group 1597883423.png" alt="Client 4" width={150} height={100} className="object-contain mt-10" />
         </div>
       </div>
-      {/* <Organization /> */}
  
     </>
   );

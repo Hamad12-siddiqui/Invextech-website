@@ -144,7 +144,6 @@ export const technologyIconsMap = {
 
     { imgSrc: "/images/Mask_group_28_6938e335e4.png", alt: "Firebase", width: 30, height: 30 },
     { imgSrc: "/images/Mask grouphhr6.png", alt: "Tailwind CSS", width: 48, height: 48 },
-    // { imgSrc: "/images/Mask_group_14_4a9d7b3d9eMask_group_22_073d002a13.png", alt: "MongoDB", width: 48, height: 48 },
     { imgSrc: "/images/Mask_group_15_27c9ac859c.png", alt: "Laravel", width: 48, height: 48 },
     { imgSrc: "/images/Mask_group_18_8f08ce0cb0.png", alt: "Firebase", width: 30, height: 30 },
     { imgSrc: "/images/Mask group (1)hhdd.png", alt: "Tailwind CSS", width: 48, height: 48 },

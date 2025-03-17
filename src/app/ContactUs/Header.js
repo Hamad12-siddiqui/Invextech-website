@@ -25,8 +25,6 @@ const Header = () => {
           Want to consult with industry specialists? Take advantage of our call scheduling feature to easily book a time
           slot that accommodates your availability.
         </p>
-
-        {/* Contact Icons */}
         <div className="flex justify-center space-x-4 sm:space-x-6">
           <a
             href="https://wa.me/your-number"

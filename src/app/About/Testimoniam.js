@@ -38,7 +38,6 @@ const Testimoniam = () => {
     <>
       <div className="w-full bg-sky-100 py-10">
         <div className="max-w-[90%] mx-auto">
-          {/* Testimonials Section */}
           <div className="flex flex-col md:flex-row justify-between gap-6">
             {testimonials.map((testimonial) => (
               <div
@@ -70,7 +69,6 @@ const Testimoniam = () => {
                     <p className="text-gray-600 text-sm">{testimonial.role}</p>
                   </div>
                 </div>
-                {/* Arrow Icon */}
                 <div className="absolute bottom-4 right-4 bg-gray-200 p-2 rounded-full">
                   <MdOutlineArrowOutward className="text-gray-600 text-sm md:text-base" />
                 </div>

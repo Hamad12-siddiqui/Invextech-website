@@ -6,7 +6,6 @@ const Industries = () => {
   return (
     <>
     <div className="w-full relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
-      {/* Image Container */}
       <div className="absolute inset-0 w-full h-full">
         <Image
           src="/images/hero.jpg"

@@ -38,7 +38,6 @@
     return (
       <div className="w-full">
         <div className="w-[93%] mx-auto flex flex-col lg:flex-row lg:justify-between  text-center items-center pt-24">
-          {/* Heading Section */}
           <div className="w-full lg:w-[20%] ml-7  lg:mb-80 -mt-10">
             <h1 className="text-2xl font-bold text-start">Our Services</h1>
             <p className="text-gray-600 text-start font-medium">
@@ -66,8 +65,6 @@
                     className="absolute top-6 left-4 transform -translate-x-1/2 w-12 h-12"
                   />
                 </div>
-
-                {/* Content */}
                 <div className="flex-1">
                   <h1 className="text-xl text-start  font-semibold">{service.title}</h1>
                   <p className="text-gray-600 mt-2 leading-6 font-thin text-start">{service.description}</p>

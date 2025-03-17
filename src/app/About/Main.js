@@ -6,7 +6,6 @@ const Main = () => {
     <>
       <div className="w-full bg-sky-100">
         <div className="w-[90%] mx-auto p-4 md:p-14 flex flex-col md:flex-row justify-between items-center gap-8">
-          {/* Image Container */}
           <div className="relative w-full md:w-[50%] h-64 md:h-96">
             <Image
               src="/images/rocket.png"
@@ -15,10 +14,7 @@ const Main = () => {
               objectFit="contain"
             />
           </div>
-
-          {/* Text Content */}
           <div className="w-full md:max-w-[90%] mx-auto flex flex-col md:justify-end md:items-end justify-center items-center gap-6">
-            {/* Vision Section */}
             <div className="bg-white p-4 md:p-6 rounded-lg w-[90%] md:w-[70%] shadow-lg">
               <div className="flex items-center justify-between">
                 <h1 className="text-xl md:text-2xl font-bold">Our Vision</h1>
@@ -36,8 +32,6 @@ const Main = () => {
                 To become the number one choice for businesses in offering innovative digital solutions.
               </p>
             </div>
-
-            {/* Mission Section */}
             <div className="bg-white p-4 md:p-6 rounded-lg w-[90%] md:w-[70%] shadow-lg">
               <div className="flex items-center justify-between">
                 <h1 className="text-xl md:text-2xl font-bold">Our Mission</h1>

@@ -33,7 +33,6 @@ const Policy = () => {
     <>
       <div className="w-full bg-sky-100 pt-10 pb-20">
         <div className="w-[90%] md:w-[86%] mx-auto">
-          {/* Header Section */}
           <div className="text-center">
             <p className="text-sky-400 text-base md:text-xl font-semibold">
               Your Expert Partner in Tailored Software Solutions
@@ -42,8 +41,6 @@ const Policy = () => {
               Invextech Quality Policy Ensures Excellence Throughout Development
             </h1>
           </div>
-
-          {/* Policy Cards */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {policyItems.map((item) => (
               <div
