@@ -32,15 +32,32 @@ const Contact = () => {
         <div className="flex lg:flex-row flex-col-reverse justify-between items-center mt-24">
           {/* Left Section */}
           <div className="lg:w-[50%] md:mt-0 mt-6">
+            <div>
             <h1 className="text-lg font-semibold">We’re just a message away!</h1>
-            <p className="flex items-center mt-2">
-              <FaCheckCircle className="text-sky-400 mr-2" />
-              You’ll receive a response within 24 hours.
+            </div>
+             <div className="flex items-center mt-2">
+            <div>
+            <FaCheckCircle className="text-sky-400 mr-2 " />
+            </div>
+              <div>
+            <p>
+            You’ll receive a response within 24 hours.
             </p>
-            <p className="flex items-center mt-2">
-              <FaCheckCircle className="text-sky-400 mr-2 mb-6" />
+            </div>
+           
+            </div>
+
+            <div className="flex items-center mt-2">
+            <div>
+            <FaCheckCircle className="text-sky-400 mr-2 lg:mb-6  md:mb-6 sm:mb-6 mb-7" />
+            </div>
+              <div>
+            <p>
               Engage directly with our product and tech experts, ensuring efficient and personalized support.
             </p>
+            </div>
+           
+            </div>
             <div className="mt-6 flex items-center justify-center">
               <Image
                 src="/images/undraw_mobile-content_yz21 1.png"
