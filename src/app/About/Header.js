@@ -20,7 +20,7 @@ const Header = () => {
           className="absolute inset-0 z-0 object-cover"
           priority
         />
-        <div className="relative z-10 flex h-full flex-col justify-center text-white max-w-[90%] md:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 flex h-full flex-col justify-center text-white max-w-[90%] md:max-w-[89%] mx-auto px-4 sm:px-6 lg:px-8">
           <p className="underline text-sm sm:text-base md:text-lg">About Us</p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2">
             Revolutionizing
@@ -31,7 +31,7 @@ const Header = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
             Edge Digital Innovations
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl sm:max-w-[60%] md:max-w-[50%] lg:max-w-[52%] w-full">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl sm:max-w-[60%] md:max-w-[50%]  w-full">
             We transform ideas into disruptive digital products and strategies
             to drive growth for Startups, SMBs, and Enterprises.
           </p>
